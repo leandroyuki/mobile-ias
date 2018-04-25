@@ -169,10 +169,16 @@ var sucess = true //false
 // >-
 prefix operator >-
 prefix func >- (rhs: Int) -> Int {
-    return rhs*rhs
+    return rhs+1
 }
 print (>-9)
 
+infix operator >-<
+func >-< (lhs: Int, rhs: Int) -> Int {
+    return (lhs*lhs)+(rhs*rhs)
+}
+
+print(2>-<3)
 
 
 
